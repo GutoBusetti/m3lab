@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/login.css">
+    <link rel="shortcut icon" href="https://images-ext-1.discordapp.net/external/reHvVwTeUtiupsLzg6ehgW9FuGfgR0vwNbaz4DFD_jA/%3Fsize%3D1024/https/cdn.discordapp.com/avatars/948986968732229712/ecc226932bf02b624f219e02cbbb5af6.png?width=480&height=480" type="image/x-icon">
+    <title>Comunidade M3 | Login</title>
+</head>
+<body>
+    <div class="box">
+        <form name="formlogin">
+            <fieldset>
+                <legend><b>Login - Comunidade M3</b></legend>
+                <br>
+                <div class="inputBox">
+                    <input type="text" name="nome" id="nome" class="inputUser" required>
+                    <label for="nome" class="labelInput">Seu Nome:</label>
+                </div>
+                <br><br>
+                <div class="inputBox">
+                    <input type="text" name="email" id="email" class="inputUser" required>
+                    <label for="email" class="labelInput">Seu Gmail:</label>
+                </div>
+                <br>
+                <br><br>
+                <label for="data_nascimento"><b>Data de Nascimento:</b></label>
+                <input type="date" name="data_nascimento" id="data_nascimento" required>
+                <br><br><br>
+                <br><br>
+                <button onclick="enviar()">Enviar</button>
+            </fieldset>
+        </form>
+    </div>
+    <script src="/assets/js/login.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

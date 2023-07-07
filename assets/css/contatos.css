@@ -1,0 +1,129 @@
+.discord {
+    width: max-content;
+    margin: auto;
+}
+
+main {
+    width: min-content;
+    margin: auto;
+}
+
+.iframediscord {
+    transition: height .3s, border-radius .3s;
+}
+
+main p {
+    text-align: center;
+    margin: auto;
+    margin-bottom: 50px;
+    margin-top: 25px;
+    width: 520px;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 18px;
+}
+
+ion-icon {
+    margin-left: 10px;
+    font-size: 25px;
+}
+
+#youtube, #facebook, #m3docs, #insta {
+    display: flex;
+    z-index: +1;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+#youtube {
+    color: red;
+}
+
+#facebook {
+    color: rgb(104, 104, 255);
+}
+
+#m3docs, #insta {
+    color: darkcyan;
+}
+
+.redes {
+    position: absolute;
+    display: flex;
+    z-index: 1;
+    flex-direction: column;
+    right: 10px;
+    top: 125px;
+}
+
+.redessociasm3 {
+    margin-top: 50px;
+}
+
+.redessociasm3 h1 {
+    text-align: center;
+}
+
+.contatopro {
+    cursor: pointer;
+    position: absolute;
+    padding: 10px 50px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: italic;
+    background-color: rgb(255, 183, 0);
+    left: 50%;
+    transform: translate(-50%);
+    transition: border-radius .7s, background-color .7s, color .5s, filter .5s;
+}
+
+.contatopro:hover {
+    border-radius: 20px;
+    background-color: gold;
+}
+
+.contatopro:active {
+    color: red;
+    filter: blur(6px);
+}
+
+.contatopro:disabled {
+    background-color: black;
+    color: white;
+}
+
+.contatopro:disabled:hover {
+    background-color: black;
+    color: white;
+    border-radius: 3px;
+}
+
+body::-webkit-scrollbar {
+    width: 5px;
+}
+
+body::-webkit-scrollbar-track {
+    background-color: rgb(34, 34, 34);
+}
+  
+body::-webkit-scrollbar-thumb {
+    background-color: #595979;
+    border-radius: 50px;
+}
+
+@media screen and (max-width: 414px) {
+    main p {
+        width: 275px;
+    }
+
+    .iframediscord {
+        width: 275px;
+        height: 420px;
+    }
+
+    .contatopro {
+        width: 275px;
+    }
+}
