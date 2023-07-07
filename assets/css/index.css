@@ -1,3 +1,8 @@
+* {
+    overflow-x:hidden;
+    overflow-y:hidden;
+}
+
 body {
     /*background-image: url(https://64.media.tumblr.com/07f0e2b1632232d991bebe1da59e7c17/tumblr_owrsjkejpX1ue08b9o1_500.gifv);*/
     /*background-image: url(https://i.pinimg.com/originals/30/b8/17/30b8174c6f1a07e0af9bcf41fec3a5f5.gif);*/
