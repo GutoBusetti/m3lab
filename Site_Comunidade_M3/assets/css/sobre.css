@@ -1,0 +1,124 @@
+main {
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    width: 880px;
+    transform: translate(-50%, -50%);
+}
+
+main h1 {
+    width: 306px;
+    margin: auto;
+    margin-bottom: 10px;
+    position: relative;
+    cursor: default;
+    padding-bottom: 10px;
+    font-size: 40px;
+    font-weight: 900;
+}
+
+.h1bar {
+    height: 3.5px;
+    width: 100%;
+    background-image: linear-gradient(45deg, blue, red);
+    content: '';
+    display: block;
+    width: 0px;
+    margin: auto;
+    margin-top: 5px;
+    border-radius: 10px;
+    transition-duration: .5s;
+}
+
+main h1:hover .h1bar {
+    width: 100%;
+    animation: vibrar .7s infinite;
+}
+
+main p {
+    text-indent: 30px;
+    text-align: justify;
+    font-weight: bold;
+    font-size: 20px;
+    font-style: italic;
+}
+
+.p2 {
+    opacity: 0;
+    transition: opacity .5s, rotate .5s, scale .5s, translate .5s;
+    rotate: 6deg;
+    scale: 50%;
+    translate: 3% 25%;
+}
+
+.lermais, .lermenos {
+    background-image: linear-gradient(45deg, red, blue);
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    background-position: left bottom;
+    padding-bottom: 1px;
+    color: rgb(86, 86, 86);
+    font-size: 13px;
+    transition: color .5s, background-size .5s;
+    cursor: pointer;
+}
+
+.lermais:hover, .lermenos:hover {
+    color: rgb(158, 158, 158);
+    background-size: 100% 2px;
+}
+
+@keyframes vibrar {
+    10% {
+        rotate: 0deg;
+    }
+
+    20% {
+        rotate: .20deg;
+    }
+
+    20% {
+        rotate: 0deg;
+    }
+
+    30% {
+        rotate: .20deg;
+    }
+
+    40% {
+        rotate: 0deg;
+    }
+
+    50% {
+        rotate: .20deg;
+    }
+
+    60% {
+        rotate: 0deg;
+    }
+
+    70% {
+        rotate: .20deg;
+    }
+
+    80% {
+        rotate: .20deg;
+    }
+
+    90% {
+        rotate: 0deg;
+    }
+
+    100% {
+        rotate: .20deg;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    main p {
+        font-size: 15px;
+        width: 306px;
+        margin: auto;
+    }
+}
